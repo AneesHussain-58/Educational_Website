@@ -1,0 +1,439 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+/* ____________Navbar_______________ */
+nav {
+    margin: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 1vw 3vw;
+    height: 60px;
+    box-shadow: 10px 1px 1px black;
+    position: fixed;
+    width: 94%;
+    background-color: white;
+    z-index: 999;
+}
+
+nav .navigation ul {
+    display: flex;
+    align-items: center;
+    height: 20px;
+}
+
+nav .navigation ul li {
+    list-style: none;
+    padding: 10px;
+    margin-right: 20px;
+}
+
+nav .navigation ul li a {
+    text-decoration: none;
+    font-size: larger;
+    color: rgb(12, 12, 210);
+}
+
+nav .navigation ul li a.active,
+nav .navigation ul li a:hover {
+    color: rgb(22, 206, 47);
+}
+
+/* ____________Home_______________ */
+#home {
+    background-image: linear-gradient(rgba(4, 6, 46, 0.3), rgba(6, 3, 53, 0.7)), url('./Images/backimg.jpg');
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    height: 90vh;
+    margin-top: 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: rgb(134, 236, 204);
+    text-align: center;
+    line-height: 1.3;
+
+}
+
+#home h2 {
+    font-size: 2.2rem;
+    margin-bottom: 0px;
+}
+
+#home p {
+    width: 50%;
+    color: rgb(233, 230, 227);
+    margin-bottom: 20px;
+}
+
+#home .btn {
+    font-size: 1.2rem;
+    margin: 10px;
+    font-size: small;
+}
+
+#home .btn1 {
+    background-color: blue;
+    padding: 1rem;
+    border-radius: 5px 5px 5px 5px;
+    color: white;
+}
+
+#home .btn2 {
+    background-color: rgb(199, 242, 6);
+    padding: 1rem;
+    border-radius: 5px 5px 5px 5px;
+}
+
+#home .btn a {
+    text-decoration: none;
+}
+
+#home .btn1:hover {
+    background-color: brown;
+    color: black;
+}
+
+#home .btn2:hover {
+    background-color: rgb(7, 165, 208);
+    color: white;
+}
+
+/* ____________Features_________________ */
+
+#features {
+    text-align: center;
+    margin-top: 50px;
+    background-image: linear-gradient(rgb(15, 100, 211), rgba(6, 70, 150));
+}
+
+#features h2 {
+    font-size: 2rem;
+    margin-bottom: 0px;
+    margin-top: 100px;
+    color: rgb(141, 141, 237);
+}
+
+#features h5 {
+    color: rgb(245, 171, 171);
+}
+
+#features .cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    grid-gap: 1rem;
+    padding: 0vw 5vw 2vw 7vw;
+}
+
+#features .cards-components {
+    text-align: start;
+    background-color: rgb(233, 223, 223);
+    padding: 15px;
+    border-radius: 8px;
+}
+
+#features .cards-components img {
+    width: 50px;
+    margin-bottom: 0px;
+}
+
+.cards-components h3 {
+    color: rgb(118, 103, 84);
+}
+
+/* _________________Courses_________________ */
+#course {
+    text-align: center;
+    padding: 3vw 5vw 2vw 7vw;
+    background-image: linear-gradient(rgb(109 103 52 / 40%), rgb(103 70 70));
+}
+
+#course .popular_course {
+    color: rgb(96, 108, 145);
+}
+
+#course .course_quatation {
+    color: rgb(155, 116, 116);
+}
+
+#course .course_box {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    grid-gap: .7rem;
+}
+
+#course .courses {
+    text-align: start;
+    background-color: rgb(217, 213, 213);
+    position: relative;
+    height: 100%;
+    border-radius: 5px;
+    margin-bottom: 50px !important;
+
+}
+
+#course .courses img {
+    width: 100%;
+    height: 63%;
+    background-position: center;
+    background-size: cover;
+    border-radius: 5px;
+}
+
+#course .courses_detail {
+    padding: 15px 10px 0px 10px;
+}
+
+.spans {
+    margin-bottom: 0px;
+    font-size: smaller;
+}
+
+#course .courses_detail h4 {
+    margin-bottom: 0px;
+    font-size: 1.4rem;
+    margin-top: 0px;
+}
+
+.stars_rating {
+    display: flex;
+    flex-direction: row;
+    width: 30px;
+    margin-top: 2px;
+}
+
+.reviews {
+    margin-top: 8px;
+    margin-left: 5px;
+}
+
+#course .course_box .cost {
+    background-color: rgb(105, 105, 4);
+    font-size: 1rem;
+    border-radius: 50%;
+    width: 70px;
+    height: 70px;
+    text-align: center;
+    position: absolute;
+    color: aliceblue;
+    line-height: 70px;
+    right: 5px;
+    bottom: 100px;
+}
+
+/* ___________________Registration______________________ */
+#registration {
+    padding: 6vw 8vw 6vw 8vw;
+    background-image: linear-gradient(rgba(9, 3, 100, 0.7), rgba(5, 7, 134, 0.3)), url('./Images/comp.jpg');
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    width: 83.7%;
+    height: 100%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#registration .reg_time {
+    color: white;
+}
+
+#registration .free_course_reg {
+    margin-bottom: 0px;
+}
+
+#registration .reg_heading {
+    margin-top: 0px;
+    color: rgb(210, 96, 96);
+}
+
+#registration .reg_time .time_frame {
+    display: flex;
+}
+
+#registration .reg_time .time_frame .time {
+    padding: 15px 33px;
+    background-color: rgba(255, 255, 255, 0.5);
+    text-align: center;
+    backdrop-filter: blur(2px);
+    margin: 0px 5px 10px 5px;
+    box-shadow: 0px 8px 32px rgba(31, 38, 135, 0.37);
+    border-radius: 5px;
+    line-height: 1.5;
+}
+
+#registration .registration_form {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    padding: 40px;
+    box-shadow: 0px 8px 32px rgba(31, 38, 135, 0.37);
+    border-radius: 5px;
+}
+
+#registration .registration_form input {
+    padding: 15px 10px;
+    margin: 5px 0px;
+    outline: none;
+    box-shadow: 0px 8px 32px rgba(31, 38, 135, 0.37);
+    border-radius: 10px solid rgba(84, 40, 241);
+}
+
+#registration .registration_form .btn {
+    margin-top: 12px;
+}
+
+#registration .registration_form .submit_form {
+    padding: 10px;
+    background-color: brown;
+    text-decoration: none;
+    font-size: 1.2rem;
+    border-radius: 4px;
+    box-shadow: 0px 8px 32px rgba(31, 38, 135, 0.37);
+}
+
+#registration .registration_form .submit_form:hover {
+    background-color: yellow;
+    color: brown;
+}
+
+#registration .registration_form .create_account {
+    font: bold;
+}
+
+/* _______________________group_community__________________ */
+#group_community {
+    padding: 6vw 8vw 6vw 8vw;
+    text-align: center;
+}
+
+#group_community .com_heading {
+    margin-bottom: 0px;
+    color: rgb(153, 153, 231);
+}
+
+#group_community .quatation_com {
+    margin-top: 8px;
+    color: rgb(143, 98, 46);
+}
+
+#group_community .group_profiles {
+    display: flex;
+    justify-content: center;
+}
+
+#group_community .profiles {
+    background-color: whitesmoke;
+    padding: 14px;
+    margin: 3px;
+}
+
+#group_community .profiles img {
+    vertical-align: middle;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+}
+
+#group_community .profiles h4 {
+    margin-bottom: 0px;
+    line-height: 1.8rem;
+}
+
+#group_community .profiles p {
+    margin-top: 0px;
+    font-size: smaller;
+}
+
+
+#group_community .social_media {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+#group_community .social_media img {
+    vertical-align: middle;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    margin: 5px;
+    cursor: pointer;
+}
+
+#group_community .social_media img:hover {
+    background-color: rgb(15, 225, 81);
+}
+
+/* ___________________Footer_________________ */
+#footer {
+    background-image: linear-gradient(rgb(6, 72, 158), #084594);
+    padding: 8vw 8vw 9vw 15vw;
+}
+
+#footer .footer_container {
+    display: flex;
+}
+
+#footer .footer_data h3 {
+    color: rgb(237, 197, 95);
+}
+
+#footer .footer_data p {
+    line-height: 1.2rem;
+    color: rgb(208, 197, 197);
+}
+
+#footer .footer_data {
+    margin: 10px;
+    width: 450px;
+}
+
+#footer #last_footer_data {
+    width: 700px !important;
+}
+
+#footer .footer_data .search {
+    display: flex;
+}
+
+#footer .footer_data .search input {
+    padding: 12px;
+    font-size: 1rem;
+    background-color: rgb(98, 86, 86);
+    border: none;
+}
+
+#footer .footer_data .search a {
+    text-decoration: none;
+    padding: 12px;
+    font-size: 1rem;
+    background-color: darkorange;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.copyright {
+    display: flex;
+    margin: 10px;
+    margin-top: 40px;
+    color: rgb(240, 182, 160);
+}
+
+.copyright .footer_icons {
+    flex: auto;
+    margin-top: 5px;
+}
+
+.copyright .footer_icons img {
+    float: right;
+    vertical-align: middle;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    margin: 5px;
+    cursor: pointer;
+}
